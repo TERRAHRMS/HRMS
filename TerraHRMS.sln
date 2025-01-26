@@ -20,8 +20,15 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TerraHRMS.Models", "TerraHRMS.Model\TerraHRMS.Models.csproj", "{29BCABF7-2426-470E-ADF3-FFF764AC4D5B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TerraHRMS.JWT", "TerraHRMS.JWT\TerraHRMS.JWT.csproj", "{26D95058-AC73-4C18-BE48-32620E1A3224}"
+	ProjectSection(ProjectDependencies) = postProject
+		{29BCABF7-2426-470E-ADF3-FFF764AC4D5B} = {29BCABF7-2426-470E-ADF3-FFF764AC4D5B}
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TerraHRMS1.Server", "TerraHRMS1.Server\TerraHRMS1.Server.csproj", "{E5D16903-05AF-402C-A335-BA84B7D59959}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TerraHRMSEmailServices", "EmailServices\TerraHRMSEmailServices.csproj", "{356EE8A8-1904-416B-8192-138B05A5947D}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TerraHRMS.DB", "TerraHRMS.DB\TerraHRMS.DB.sqlproj", "{A49109FB-4BFD-4289-AD77-27BC860366C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerraHRMS.Server", "TerraHRMS.Server\TerraHRMS.Server.csproj", "{68779F84-01A8-4E07-860F-EDF189E0E7E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +60,20 @@ Global
 		{26D95058-AC73-4C18-BE48-32620E1A3224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26D95058-AC73-4C18-BE48-32620E1A3224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26D95058-AC73-4C18-BE48-32620E1A3224}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E5D16903-05AF-402C-A335-BA84B7D59959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5D16903-05AF-402C-A335-BA84B7D59959}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5D16903-05AF-402C-A335-BA84B7D59959}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5D16903-05AF-402C-A335-BA84B7D59959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356EE8A8-1904-416B-8192-138B05A5947D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356EE8A8-1904-416B-8192-138B05A5947D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356EE8A8-1904-416B-8192-138B05A5947D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356EE8A8-1904-416B-8192-138B05A5947D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A49109FB-4BFD-4289-AD77-27BC860366C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A49109FB-4BFD-4289-AD77-27BC860366C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A49109FB-4BFD-4289-AD77-27BC860366C5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A49109FB-4BFD-4289-AD77-27BC860366C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A49109FB-4BFD-4289-AD77-27BC860366C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A49109FB-4BFD-4289-AD77-27BC860366C5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{68779F84-01A8-4E07-860F-EDF189E0E7E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68779F84-01A8-4E07-860F-EDF189E0E7E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68779F84-01A8-4E07-860F-EDF189E0E7E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68779F84-01A8-4E07-860F-EDF189E0E7E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
